@@ -16,6 +16,10 @@ class Status < ApplicationRecord
     end
   end
 
+  def timestamp
+    created_at.strftime('%m/%d/%Y %I:%M%p')
+  end
+
   private
 
   def downcase_status
