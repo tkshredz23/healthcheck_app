@@ -1,2 +1,10 @@
-<h1>HealthCheck#index</h1>
-<p>Find me in app/views/health_check/index.html.erb</p>
+<h1><%= current_status %></h1>
+<div class="messages">
+  <ul>
+    <% @latest_messages.each do |msg| %>
+      <li>
+        <%= msg.message %>
+      </li>
+    <% end %>
+  </ul>
+</div>
