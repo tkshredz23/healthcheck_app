@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       resources :status, only: [:create]
     end
   end
+
+  root 'health_check#index'
 end
