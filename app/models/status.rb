@@ -1,7 +1,7 @@
 class Status < ApplicationRecord
   before_validation :downcase_status
 
-  validates :stat, inclusion:  { in: %w(up down), message: '%{value} is an invalid status' }
+  validates :stat, inclusion:  { in: %w(up down), message: '%{value} is an invalid status' }, if: :stat
 
   # NOTE: Ensure that at least of these properties are present before save.
   validates :stat, presence: true, unless: :message
