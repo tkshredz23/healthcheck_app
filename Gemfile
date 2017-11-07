@@ -19,7 +19,7 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.6'
-  gem 'factory_bot'
+  gem 'factory_bot_rails'
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
