@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :status do
-    message "MyText"
-    stat "MyString"
+    message "System is up and running"
+    stat "up"
   end
 end
