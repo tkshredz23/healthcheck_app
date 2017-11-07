@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe HealthCheckController, type: :controller do
+describe HealthCheckController, type: :controller do
 
   describe "GET #index" do
     it "returns http success" do
@@ -8,5 +8,4 @@ RSpec.describe HealthCheckController, type: :controller do
       expect(response).to have_http_status(:success)
     end
   end
-
 end

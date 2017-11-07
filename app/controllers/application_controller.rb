@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   end
 
   rescue_from ActiveRecord::RecordInvalid do |e|
-    render_exception(e.message, 400)
+    render_exception(e.message, :bad_request)
   end
 
   private
