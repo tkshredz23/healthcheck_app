@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.4.2'
 
 gem 'rails', '~> 5.1.4'
 gem 'sqlite3'
@@ -15,8 +16,9 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
+gem 'jwt'
+gem 'bcrypt'
+gem 'simple_command'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.6'
