@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     end
   end
 
+  post 'authenticate', to: 'authentication#authenticate'
   root 'health_check#index'
 end

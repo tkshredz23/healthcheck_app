@@ -12,7 +12,7 @@ class Status < ApplicationRecord
 
   class << self
     def current_status
-      where.not(stat: nil).pluck(:stat).first
+      where.not(stat: nil).limit(1).pluck(:stat).first
     end
   end
 
